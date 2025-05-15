@@ -1,8 +1,15 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import MainNavbar from '../components/MainNavbar'
 
-const Homepage = () => {
+const AboutUs = () => {
     return (
-        <div>Homepage</div>
+        <>
+            <div className="container">
+                <MainNavbar />
+                <h1>About Us</h1>
+            </div>
+        </>
     )
 }
 

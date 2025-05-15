@@ -12,6 +12,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 //Importo Routers
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+//Importo le pagine
+import Homepage from './pages/Homepage';
+import AboutUs from './pages/AboutUs';
+import Product from './pages/Product';
+
 
 
 
@@ -19,9 +24,8 @@ function App() {
 
   return (
     <>
-      <div>
+      <BrowserRouter />
 
-      </div>
 
     </>
   )
