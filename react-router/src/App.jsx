@@ -24,9 +24,13 @@ function App() {
 
   return (
     <>
-      <BrowserRouter />
-
-
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' Component={Homepage} />
+          <Route path='/product' Component={Product} />
+          <Route path='/about' Component={AboutUs} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

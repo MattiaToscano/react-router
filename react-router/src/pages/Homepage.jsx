@@ -6,7 +6,12 @@ import MainNavbar from '../components/MainNavbar'
 const Homepage = () => {
     return (
         <>
-
+            <div className="container d-flex justify-content-around">
+                <h1>
+                    Homepage
+                </h1>
+                <MainNavbar />
+            </div>
 
         </>
     )

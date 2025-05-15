@@ -5,12 +5,15 @@ import MainNavbar from '../components/MainNavbar'
 const AboutUs = () => {
     return (
         <>
-            <div className="container">
+            <div className="container d-flex justify-content-around">
+                <h1>
+                    About Us
+                </h1>
                 <MainNavbar />
-                <h1>About Us</h1>
             </div>
+
         </>
     )
 }
 
-export default Homepage
+export default AboutUs

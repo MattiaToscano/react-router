@@ -10,13 +10,13 @@ const links = [
     },
 
     {
-        path: '/',
-        label: 'Homepages',
+        path: '/product',
+        label: 'Product',
     },
 
     {
-        path: '/',
-        label: 'Homepages',
+        path: '/about',
+        label: 'AboutUs',
     }
 ]
 
@@ -28,27 +28,17 @@ const MainNavbar = () => {
                 <ul className='list-unstyled d-flex justify content-space-beetween'>
                     {links.map((link) => {
                         return (
-                            <li className=''>
-
+                            <li className='mx-2'>
+                                <NavLink className='custom-links' to={link.path}>{link.label}</NavLink>
                             </li>
                         )
-
-                    }
-
-
-
-                    )}
-
-
+                    })}
                 </ul>
-
-
-
             </nav>
-
-
         </header>
 
     )
 
 }
+
+export default MainNavbar
