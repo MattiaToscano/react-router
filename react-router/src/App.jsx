@@ -12,9 +12,6 @@ import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs';
 import Product from './pages/Product';
 
-
-
-
 function App() {
 
   return (
