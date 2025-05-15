@@ -1,10 +1,5 @@
 import { react } from 'react'
 
-//Importo Axios
-import axios from 'axios'
-
-//Importo useState, useEffect
-import { useState, useEffect } from 'react'
 
 //Importo Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"
