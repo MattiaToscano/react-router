@@ -3,11 +3,10 @@ import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css"
-import { Button } from 'bootstrap'
 
 const DetailProduct = () => {
     const params = useParams();
-    const id = parseInt(params.id);
+    const { id } = params;
     const navigate = useNavigate();
 
     const [product, setProduct] = useState({})
@@ -20,7 +19,7 @@ const DetailProduct = () => {
 
     useEffect(() => {
         getSingleProduct();
-    }, []);
+    }, [id]);
 
     return (
         <div className="product-page">
@@ -41,8 +40,9 @@ const DetailProduct = () => {
                 {product.description}
             </span>
             <button
+                className="btn btn-primary"
                 onClick={() =>
-                    navigate(`./product/${id + 1}`)
+                    navigate(`/product/${parseInt(id) + 1}`)
                 }
             >
                 Next Product

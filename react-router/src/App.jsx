@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs';
 import Product from './pages/product/Product';
+import DetailProduct from './pages/product/DetailProduct';
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/' Component={Homepage} />
           <Route path='/product'>
             <Route index Component={Product} />
+            <Route path='/product/:id' Component={DetailProduct} />
           </Route>
           <Route path='/about' Component={AboutUs} />
         </Routes>

@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 
 //Importo Navbar
-import MainNavbar from '../components/MainNavbar'
+import MainNavbar from '../../components/MainNavbar'
 
 //Importo Axios
 import axios from 'axios'
@@ -43,6 +43,9 @@ const Product = () => {
                                 <h3 className="product-title">{item.title}</h3>
                                 <p className="product-price">${item.price}</p>
                                 <p className="product-description">{item.description}</p>
+                                <NavLink to={`/product/${item.id}`} className="btn btn-primary">
+                                    View Details
+                                </NavLink>
                             </div>
                         </div>
                     ))
