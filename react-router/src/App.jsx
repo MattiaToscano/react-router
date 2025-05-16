@@ -1,4 +1,4 @@
-import { react } from 'react'
+import { React } from 'react'
 
 //Importo Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -6,13 +6,10 @@ import "bootstrap/dist/css/bootstrap.min.css"
 //Importo Routers
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-//Importo la pagina di dettaglio(DetailProduct)
-
 //Importo le pagine
 import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs';
-import Product from './pages/Product';
-
+import Product from './pages/product/Product';
 function App() {
 
   return (
@@ -20,7 +17,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' Component={Homepage} />
-          <Route path='/product' Component={Product} />
+          <Route path='/product'>
+            <Route index Component={Product} />
+          </Route>
           <Route path='/about' Component={AboutUs} />
         </Routes>
       </BrowserRouter>
