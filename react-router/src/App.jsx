@@ -1,11 +1,12 @@
 import { react } from 'react'
 
-
 //Importo Bootstrap
 import "bootstrap/dist/css/bootstrap.min.css"
 
 //Importo Routers
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+//Importo la pagina di dettaglio(DetailProduct)
 
 //Importo le pagine
 import Homepage from './pages/Homepage';
